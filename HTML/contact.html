@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img id="logo" src="../Image/logo.png" alt="Logo"></a>
+        <nav>
+            <input class="input-menu" type="checkbox" id="checked">            
+                <label class="menu-btn" for="checked">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>                   
+                </label>
+            <ul>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./gallery.html">Galeria</a></li>
+                <li><a href="./contact.html">Contrate</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main class="main-contact">
+        <h1>Vamos começar a produção?</h1>
+        <form>
+            <fieldset>               
+                <legend>Deixe seu contato que retornamos!</legend>
+                <label for="nome">Nome<strong>*</strong></label><br>
+                <input type="text" id="nome" name="nome" required placeholder="Exemplo: Maria"><br>
+                <label for="sobrenome">Sobrenome<strong>*</strong></label><br>
+                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Exemplo: dos Santos"><br>
+                <label for="tel">Telefone<strong>*</strong></label><br>
+                <input type="tel" id="tel" name="tel" placeholder="00 00000-0000" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" maxlength="13" required><br>
+                <label for="email">Email<strong>*</strong></label><br>
+                <input type="email" id="email" name="email" required placeholder="Exemplo: maria@email.com.br"><br>  
+                <label for="planos">Interesse em algum Plano?</label><br>
+                <select id="planos" name="planos" >
+                    <option class="" value="">Escolha um plano</option>
+                    <option value="basico">Basico 10xR$12,00</option> 
+                    <option value="intermediario">Intermediário 10xR20,00</option>
+                    <option value="avançado">Avançado 10xR$30,00</option> 
+                    <option value="premium">Premium 10xR$50,00</option>                                                           
+                </select><br>               
+                <label for="sobre">Fale um pouco sobre o trabalho que quer produzir:<strong>*</strong></label><br>
+                <textarea class="textarea" id="sobre" name="duvida" maxlength="1000"></textarea><br>
+                <label for="obs">Observação:</label><br>
+                <textarea class="textarea" id="obs" name="duvida" maxlength="1000"></textarea><br>
+                <p><strong>*</strong> Campos obrigatórios</p>                 
+                <button  type="submit" value="ENVIAR">Enviar</button>
+                
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>Desenvolvido por ManuFritzen</p>
+            <p class="c"> <img id="c" src="../Image/c.png"/> Todos direitos reservados</p>
+        </div>
+        <div>
+            <p>Rua General Abreu, Cidade Nova <br/>CEP: 00000-000<br/>Rio Grande/RS</p>
+        </div>
+
+        <div>
+            <p>Siga nas redes:</p>
+            <a href="https://www.instagram.com/faelo.nunes/" target="_blank">
+                <img class="follow" src="../Image/Instagram_icon.png" alt="ícone instagram">
+            </a>
+            <a href="https://www.instagram.com/faelo.nunes/" target="_blank">
+                <img class="follow" src="../Image/face_icon.png" alt="ícone facebook">
+            </a>
+        </div>
+    </footer> 
+</body>
+</html>
